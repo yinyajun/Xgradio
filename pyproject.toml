@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Xgradio"
+version = "0.0.1"
+dynamic = [ "dependencies" ]
+authors =[
+    {name = "Yajun Yin", email="skyblueice234@gmail.com"},
+]
+description = "Modified gradio 3.50.2"
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = ["gradio"]
+license = { text = "Apache 2.0" }
+classifiers = [
+    'Development Status :: 4 - Beta',
+    'License :: OSI Approved :: Apache Software License',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"*" = ["*.*"]
+
+[tool.setuptools.dynamic]
+dependencies = { file = "requirements.txt" }
