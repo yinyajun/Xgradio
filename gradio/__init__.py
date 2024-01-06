@@ -1,6 +1,6 @@
 import json
 
-print("\033[1;31;40mthis is xgradio\033[0m")
+print("\033[1;31;40mWelcome to xgradio\033[0m")
 
 import gradio.components as components
 import gradio.inputs as inputs

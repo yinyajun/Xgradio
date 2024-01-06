@@ -21,9 +21,6 @@ classifiers = [
     'Programming Language :: Python :: 3.10',
 ]
 
-[tool.setuptools.packages.find]
-where = ["src"]
-
 [tool.setuptools.package-data]
 "*" = ["*.*"]
 
